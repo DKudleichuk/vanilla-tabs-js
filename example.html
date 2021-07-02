@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vanilla Tabs Example</title>
+	<style>
+		body {
+			background: #fafafa;
+			padding: 30px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 14px;
+		}
+
+		.tabs h2 {
+			margin-top: 0;
+		}
+
+		.tabs p {
+			display: block;
+			margin: 0;
+		}
+
+		hr {
+			border: 0;
+			border-bottom: 1px solid #ccc;
+			margin: 30px 0;
+			height: 0;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="dist/vanilla-tabs.min.css">
+</head>
+<body>
+	
+	<h1>Vanilla JavaScript Responsive Tabs</h1>
+	<p>All tabs become responsive (accordion) at 840px</p>
+	<p>Source on Github: <a href="https://github.com/aboutwp/vanilla-tabs-js">https://github.com/aboutwp/vanilla-tabs-js</a></p>
+
+	<hr>
+
+	<h2>Horizontal tabs</h2>
+	<p>Initial open tab #1</p>
+
+	<ul id="tabs-h" class="tabs">
+		<li data-title="First tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus lobortis sapien, ut rhoncus dui sagittis vel. Donec rhoncus convallis justo, in placerat nibh auctor ut. Aliquam erat volutpat. Morbi finibus velit et erat vehicula, facilisis viverra magna euismod. Nullam consequat a justo id luctus. Sed vitae maximus massa. Integer ligula ligula, semper ac feugiat vel, viverra sed nisi. In commodo lacus non orci faucibus mollis. Maecenas sit amet gravida leo, non ornare nisl. Etiam rhoncus dui vitae magna pulvinar, eu semper ex porttitor. Nulla facilisi. Donec ac tortor arcu. Nulla pharetra suscipit nulla. Ut maximus justo vitae libero fermentum efficitur. Aliquam mattis quam erat, eget varius tortor cursus eget. </li>
+		<li data-title="Second tab">Pellentesque non felis sed nibh ultrices molestie in id ante. Aenean sollicitudin, lorem sed malesuada tempor, erat odio imperdiet mi, condimentum sagittis arcu leo sed erat. Nam sed ex lectus. Praesent efficitur ex vel nunc tempus aliquet. Nullam sit amet ligula enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. </li>
+		<li data-title="Third tab">Nullam quis eleifend massa. Nullam ut ex libero. Donec ac enim in ipsum interdum laoreet quis vestibulum risus. Curabitur pharetra dictum cursus. Praesent suscipit ultrices massa, ullamcorper ullamcorper leo tristique id. Praesent lobortis, mauris at placerat tempus, diam ex auctor quam, a posuere metus purus non nibh. Nunc sagittis dui lectus, non euismod dolor consequat nec. Proin non ipsum tempus, accumsan eros vel, mollis neque. Mauris sit amet justo non turpis porttitor luctus sed sed metus. Duis viverra sapien enim, non placerat erat feugiat maximus. Ut semper id mi id convallis. </li>
+	</ul>
+
+	<hr>
+
+	<h2>Vertical tabs</h2>
+	<p>Initial open tab #2</p>
+
+	<ul id="tabs-v" class="tabs">
+		<li data-title="First tab">
+			<h2>Some heading 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus lobortis sapien, ut rhoncus dui sagittis vel. Donec rhoncus convallis justo, in placerat nibh auctor ut. Aliquam erat volutpat. Morbi finibus velit et erat vehicula, facilisis viverra magna euismod. Nullam consequat a justo id luctus. Sed vitae maximus massa. Integer ligula ligula, semper ac feugiat vel, viverra sed nisi. In commodo lacus non orci faucibus mollis. Maecenas sit amet gravida leo, non ornare nisl. Etiam rhoncus dui vitae magna pulvinar, eu semper ex porttitor. Nulla facilisi. Donec ac tortor arcu. Nulla pharetra suscipit nulla. Ut maximus justo vitae libero fermentum efficitur. Aliquam mattis quam erat, eget varius tortor cursus eget.</p>
+		</li>
+		<li data-title="Second tab">
+			<h2>Some heading 2</h2>
+			<p>Pellentesque non felis sed nibh ultrices molestie in id ante. Aenean sollicitudin, lorem sed malesuada tempor, erat odio imperdiet mi, condimentum sagittis arcu leo sed erat. Nam sed ex lectus. Praesent efficitur ex vel nunc tempus aliquet. Nullam sit amet ligula enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti.</p>
+		</li>
+		<li data-title="Third tab">
+			<h2>Some heading 3</h2>
+			<p>Nullam quis eleifend massa. Nullam ut ex libero. Donec ac enim in ipsum interdum laoreet quis vestibulum risus. Curabitur pharetra dictum cursus. Praesent suscipit ultrices massa, ullamcorper ullamcorper leo tristique id. Praesent lobortis, mauris at placerat tempus, diam ex auctor quam, a posuere metus purus non nibh. Nunc sagittis dui lectus, non euismod dolor consequat nec. Proin non ipsum tempus, accumsan eros vel, mollis neque. Mauris sit amet justo non turpis porttitor luctus sed sed metus. Duis viverra sapien enim, non placerat erat feugiat maximus. Ut semper id mi id convallis.</p>
+		</li>
+	</ul>
+
+	<hr>
+
+	<h2>Accordion tabs</h2>
+	<p>All tabs initially closed by specifying <code>'activeIndex' : -1</code> option. Works only for accordions.</p>
+
+	<ul id="tabs-a" class="tabs">
+		<li data-title="First tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus lobortis sapien, ut rhoncus dui sagittis vel. Donec rhoncus convallis justo, in placerat nibh auctor ut. Aliquam erat volutpat. Morbi finibus velit et erat vehicula, facilisis viverra magna euismod. Nullam consequat a justo id luctus. Sed vitae maximus massa. Integer ligula ligula, semper ac feugiat vel, viverra sed nisi. In commodo lacus non orci faucibus mollis. Maecenas sit amet gravida leo, non ornare nisl. Etiam rhoncus dui vitae magna pulvinar, eu semper ex porttitor. Nulla facilisi. Donec ac tortor arcu. Nulla pharetra suscipit nulla. Ut maximus justo vitae libero fermentum efficitur. Aliquam mattis quam erat, eget varius tortor cursus eget. </li>
+		<li data-title="Second tab">Pellentesque non felis sed nibh ultrices molestie in id ante. Aenean sollicitudin, lorem sed malesuada tempor, erat odio imperdiet mi, condimentum sagittis arcu leo sed erat. Nam sed ex lectus. Praesent efficitur ex vel nunc tempus aliquet. Nullam sit amet ligula enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. </li>
+		<li data-title="Third tab">Nullam quis eleifend massa. Nullam ut ex libero. Donec ac enim in ipsum interdum laoreet quis vestibulum risus. Curabitur pharetra dictum cursus. Praesent suscipit ultrices massa, ullamcorper ullamcorper leo tristique id. Praesent lobortis, mauris at placerat tempus, diam ex auctor quam, a posuere metus purus non nibh. Nunc sagittis dui lectus, non euismod dolor consequat nec. Proin non ipsum tempus, accumsan eros vel, mollis neque. Mauris sit amet justo non turpis porttitor luctus sed sed metus. Duis viverra sapien enim, non placerat erat feugiat maximus. Ut semper id mi id convallis. </li>
+	</ul>
+
+	<script src="dist/vanilla-tabs.min.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// create horizontal tabs
+			new VanillaTabs({
+				'selector': '#tabs-h',	// default is ".tabs"
+				'type': 'horizontal', 	// can be horizontal / vertical / accordion
+				'responsiveBreak': 840,	// tabs become accordion on this device width
+				'activeIndex' : 0				// active tab index (starts from 0 ). Can be -1 for accordions.
+			});
+
+			// create vertical tabs
+			new VanillaTabs({
+				'selector': '#tabs-v',	// default is ".tabs"
+				'type': 'vertical', 		// can be horizontal / vertical / accordion
+				'responsiveBreak': 840,	// tabs become accordion on this device width
+				'activeIndex' : 1				// active tab index (starts from 0 ). Can be -1 for accordions.
+			});
+
+			// createaccordion
+			new VanillaTabs({
+				'selector': '#tabs-a',	// default is ".tabs"
+				'type': 'accordion', 		// can be horizontal / vertical / accordion
+				'responsiveBreak': 840,	// tabs become accordion on this device width
+				'activeIndex' : -1			// active tab index (starts from 0 ). Can be -1 for accordions.
+			});
+
+		});
+	</script>
+
+</body>
+</html>
