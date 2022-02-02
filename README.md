@@ -15,7 +15,7 @@ Dmytro Kudleichuk
 
 ## Online Demo
 
-See <a href="https://aboutwp.github.io/vanilla-tabs-js/example.html">demo here</a> and <a href="https://github.com/aboutwp/vanilla-tabs-js">sources here</a>
+See <a href="https://dkudleichuk.github.io/vanilla-tabs-js/example.html">demo here</a> and <a href="https://github.com/DKudleichuk/vanilla-tabs-js">sources here</a>
 
 ## Getting Started
 
