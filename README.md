@@ -8,9 +8,9 @@ Responsive tabs-to-accordion script without jQuery, written using pure JavaScrip
 
 ## Author
 
-AboutWP
+Dmytro Kudleichuk
 
-<a href="https://github.com/aboutwp">GitHub</a>
+<a href="https://github.com/DKudleichuk">GitHub</a>
 
 ## Online Demo
 
