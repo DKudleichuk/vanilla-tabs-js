@@ -10,6 +10,7 @@ Responsive tabs-to-accordion script without jQuery, written using pure JavaScrip
 
 Dmytro Kudleichuk
 
+<a href="https://www.linkedin.com/in/dmitriy-kudleichuk/">LinkedIn</a>
 <a href="https://github.com/DKudleichuk">GitHub</a>
 
 ## Online Demo
